@@ -45,11 +45,15 @@ body {
     position: relative;
     padding-top: 30px;
     margin-right: 60px;
+    
   }
   .delete-btn,
   .like-btn {
-    display: inline-block;
-    Cursor: pointer;
+    
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .delete-btn {
     width: 18px;

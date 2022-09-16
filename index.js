@@ -1,18 +1,16 @@
-var plus = document.querySelector(".plus-btn")
-var moins = document.querySelector(".minus-btn")
-var count = document.querySelector ("p")
+var removeCartItemButtons = document.getElementsByClassName("delete-btn")
+console.log(removeCartItemButtons)
+for (var i = 0; i < removeCartItemButtons.length; i++ ) {
+    var button = removeCartItemButtons[i]
+    button.addEventListener("click", function(event){
+        var buttonClicked = event.target
+        buttonClicked.parentElement.parentElement.parentElement.remove()
+    })
+}
 
-plus.addEventListener("click",function(){
 
-    var numb = parseInt( count.textContent)
-    numb = numb +1
-    count.textContent = numb
-})
-moins.addEventListener("click",function(){
-    var numb = parseInt(count.textContent)
-    
-    if(numb>0){
-        numb = numb-1
-    }
-    count.textContent = numb
-})
+var likeButton = document.getElementsByClassName("like-btn")
+likeButton.addEventListener("click", function(event){
+    var buttonClick = event.target
+    buttonClick.parentElement.style.backround="#337ab7"
+} )

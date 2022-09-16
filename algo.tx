@@ -1,0 +1,51 @@
+algorithm 
+var n, i ,f: integer
+BEGIN
+write("entrer un nombre")
+read(n)
+for i= 1; i=<n ; i++
+f =i*f
+endfor
+
+write(f)
+
+
+
+algorithm 2
+var  n,i :integer
+tab : ARRAY_OF integer [n]
+BEGIN
+write(enter a number)
+read(n)
+max=arr[0]
+min=arr[0]
+for(i=0 ; i=<arr.length ; i++)
+end for
+if (arr[i]<min)
+min=arr[i]
+else if(arr[i]>max)
+max=arr[i]
+write(min,max)
+
+
+var  n,i :integer
+write("enter number")
+read(n)
+tab : ARRAY_OF integer [n]
+BEGIN
+FOR i FROM 0 TO tab.lenght-1 STEP 1 DO
+write("enter number to the array")
+Read(tab[i])
+ENDFOR
+min := tab[0]
+max := tab[0]
+for i FROM 0 TO tab.lenght-1 STEP 1 DO
+if(tab[i]>max) DO
+max := tab[i]
+ENDIF
+if(tab[i]<min) DO
+min := tab[i]
+ENDIF
+ENDFOR
+write(" le plus grand nombre est "max")
+write("le plus petit nombre est "min")
